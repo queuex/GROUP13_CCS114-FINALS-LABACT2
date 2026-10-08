@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Record Manager</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Class Record Manager</h1>
+      <p>JavaScript Arrays and Array Methods</p>
+    </header>
+
+    <main>
+      <section>
+        <h2>Student List</h2>
+        <div id="studentList"></div>
+        <p id="totalStudents"></p>
+      </section>
+
+      <section class="card">
+        <h2>Add Student (push)</h2>
+        <input type="text" id="studentName" placeholder="Enter student name" />
+        <button onclick="addStudent()">Add</button>
+      </section>
+
+      <section class="card">
+        <h2>Remove Last (pop)</h2>
+        <button onclick="removeLastStudent()">Remove Last</button>
+      </section>
+
+      <section class="card">
+        <h2>Find by Index (at)</h2>
+        <input type="number" id="indexNumber" placeholder="Enter index" />
+        <button onclick="findStudent()">Find</button>
+      </section>
+
+      <section class="card">
+        <h2>Join Items</h2>
+        <button onclick="showJoinedStudents()">Join Students</button>
+      </section>
+
+      <section class="card">
+        <h2>Convert to String</h2>
+        <button onclick="showStringStudents()">Convert to String</button>
+      </section>
+
+      <section class="result">
+        <h2>Result</h2>
+        <p id="result">Choose an action above.</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        Abila, John Ryan L. | Fernandez, Joseph Martine E. | Serrano, Kweenee
+        Jen B.
+      </p>
+      <p>
+        <strong>Finals Laboratory 2</strong> | <strong>Section:</strong> 2BSIT-B
+        GROUP 13 | <strong>Professor:</strong> Prof. Albert Q. Alforja
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

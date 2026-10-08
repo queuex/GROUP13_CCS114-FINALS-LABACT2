@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f6fb;
+  color: #243447;
+}
+
+header {
+  background: #315b8a;
+  color: white;
+  text-align: center;
+  padding: 18px;
+}
+
+header h1 {
+  margin: 0 0 5px;
+}
+
+header p {
+  margin: 0;
+}
+
+main {
+  width: 90%;
+  max-width: 900px;
+  margin: 15px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+section {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+section:first-child {
+  grid-row: 1 / 6;
+}
+
+.card {
+  margin: 0;
+}
+
+.result {
+  grid-column: 1 / 3;
+  background: #eaf2fb;
+}
+
+section h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+input {
+  padding: 9px;
+  width: 65%;
+  border: 1px solid #b8c4d0;
+  border-radius: 5px;
+}
+
+button {
+  padding: 9px 13px;
+  border: none;
+  border-radius: 5px;
+  background: #315b8a;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #24476d;
+}
+
+#studentList {
+  line-height: 1.8;
+}
+
+#totalStudents {
+  font-weight: bold;
+}
+
+.footer {
+  background: #315b8a;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 13px;
+}
+
+.footer p {
+  margin: 4px;
+}
+
+@media (max-width: 600px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+  section:first-child {
+    grid-row: auto;
+  }
+  .result {
+    grid-column: auto;
+  }
+}
